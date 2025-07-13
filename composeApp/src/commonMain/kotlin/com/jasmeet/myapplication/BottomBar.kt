@@ -35,7 +35,7 @@ fun BottomNavigationBar(navController: NavHostController) {
 
     NavigationBar {
         tabs.forEach { tab ->
-            val isSelected =  currentDestination?.contains(tab.route::class.simpleName ?: "") == true
+            val isSelected = currentDestination?.contains(tab.route::class.simpleName ?: "") == true
             NavigationBarItem(
                 icon = {
                     Icon(
